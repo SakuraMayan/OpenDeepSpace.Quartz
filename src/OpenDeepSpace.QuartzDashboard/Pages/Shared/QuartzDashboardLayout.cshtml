@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/_content/OpenDeepSpace.QuartzDashboard/element-ui/index.css" rel="stylesheet" />
+    <script src="~/_content/OpenDeepSpace.QuartzDashboard/vue/vue.js?v=2.0"></script>
+    <script src="~/_content/OpenDeepSpace.QuartzDashboard/element-ui/index.js"></script>
+    <script src="~/_content/OpenDeepSpace.QuartzDashboard/vue/axios.min.js"></script>
+    <script src="~/_content/OpenDeepSpace.QuartzDashboard/signalR/signalr.min.js"></script>
+</head>
+<body>
+    @inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+    @functions{
+        public string GetAntiXsrfRequestToken()
+        {
+            return Xsrf.GetAndStoreTokens(Model.HttpContext).RequestToken;
+        }
+        public string GetGetAntiXsrfRequestTokenName()
+        {
+            return Xsrf.GetAndStoreTokens(Model.HttpContext).HeaderName;
+        }
+    }
+    <div>
+        @Html.AntiForgeryToken()
+        @RenderBody()
+    </div>
+    <script>
+        
+            var axiosrequerst = [];
+
+            //注册访问前拦截
+            axios.interceptors.request.use(
+                function (config) {
+                    config.headers.@GetGetAntiXsrfRequestTokenName() = "@GetAntiXsrfRequestToken()";//document.getElementsByName("__RequestVerificationToken")[0].value;
+
+                    axiosrequerst.push(config.url);
+
+                    return config;
+                },
+                function (error) {
+
+                    return error;
+                }
+            );
+            axios.interceptors.response.use(
+                function (response) {
+
+                    return response;
+                },
+                function (error) {
+
+                    return error;
+                }
+            );
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html >

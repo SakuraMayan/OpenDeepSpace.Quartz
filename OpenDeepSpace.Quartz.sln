@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{515C8C8A-D2C0-4AFF-A19E-362578F567DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "demo", "demo", "{3F1BE0E5-B879-412A-94E0-D9FA2634DE52}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenDeepSpace.Quartz.Demo", "demo\OpenDeepSpace.Quartz.Demo\OpenDeepSpace.Quartz.Demo.csproj", "{3BEE6F58-6EAD-40A3-BAEE-A0BD339062AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenDeepSpace.Quartz", "src\OpenDeepSpace.Quartz\OpenDeepSpace.Quartz.csproj", "{78EA7663-AC71-4904-8AF6-D47D6D645F1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenDeepSpace.Quartz.MySql", "src\OpenDeepSpace.Quartz.MySql\OpenDeepSpace.Quartz.MySql.csproj", "{2CBC1594-59F3-472A-89B7-AB9F72A8CE42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenDeepSpace.QuartzDashboard", "src\OpenDeepSpace.QuartzDashboard\OpenDeepSpace.QuartzDashboard.csproj", "{2E294C08-0C9D-4F10-98BA-43427BDD285A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BEE6F58-6EAD-40A3-BAEE-A0BD339062AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEE6F58-6EAD-40A3-BAEE-A0BD339062AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEE6F58-6EAD-40A3-BAEE-A0BD339062AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEE6F58-6EAD-40A3-BAEE-A0BD339062AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EA7663-AC71-4904-8AF6-D47D6D645F1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EA7663-AC71-4904-8AF6-D47D6D645F1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EA7663-AC71-4904-8AF6-D47D6D645F1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EA7663-AC71-4904-8AF6-D47D6D645F1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBC1594-59F3-472A-89B7-AB9F72A8CE42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBC1594-59F3-472A-89B7-AB9F72A8CE42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBC1594-59F3-472A-89B7-AB9F72A8CE42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBC1594-59F3-472A-89B7-AB9F72A8CE42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E294C08-0C9D-4F10-98BA-43427BDD285A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E294C08-0C9D-4F10-98BA-43427BDD285A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E294C08-0C9D-4F10-98BA-43427BDD285A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E294C08-0C9D-4F10-98BA-43427BDD285A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BEE6F58-6EAD-40A3-BAEE-A0BD339062AE} = {3F1BE0E5-B879-412A-94E0-D9FA2634DE52}
+		{78EA7663-AC71-4904-8AF6-D47D6D645F1E} = {515C8C8A-D2C0-4AFF-A19E-362578F567DA}
+		{2CBC1594-59F3-472A-89B7-AB9F72A8CE42} = {515C8C8A-D2C0-4AFF-A19E-362578F567DA}
+		{2E294C08-0C9D-4F10-98BA-43427BDD285A} = {515C8C8A-D2C0-4AFF-A19E-362578F567DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EA46A26-FC66-4A0D-A1B3-8135A0650876}
+	EndGlobalSection
+EndGlobal
